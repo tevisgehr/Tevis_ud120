@@ -29,5 +29,11 @@ print "Fitting:"
 t = time()
 clf.fit(features_train,labels_train)
 print (time() - t), "s"
+pred = clf.predict(features_test)
+
+
+from sklearn.metrics import accuracy_score
+acc = accuracy_score(pred, labels_test)
+print acc
 
 #########################################################
