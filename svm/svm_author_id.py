@@ -24,7 +24,7 @@ features_train, features_test, labels_train, labels_test = preprocess()
 #My code:
 #########################################################
 from sklearn import svm
-clf = svm.SVC(kernel='rbf')
+clf = svm.SVC(C=6000.0, kernel='rbf')
 print "Fitting:"
 t = time()
 
